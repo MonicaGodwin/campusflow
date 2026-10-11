@@ -1,11 +1,7 @@
-"""Summary reports (F6)."""
-
 from .tickets import PRIORITIES, STATUSES
 
 
 def build_report(tickets):
-    """Return totals and breakdowns. Every status/priority is always present,
-    so an empty system reports zeros instead of missing keys."""
     by_status = {name: 0 for name in STATUSES}
     by_priority = {name: 0 for name in PRIORITIES}
     for ticket in tickets:

@@ -1,5 +1,3 @@
-"""JSON persistence (F7)."""
-
 import json
 import os
 import tempfile
